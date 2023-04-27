@@ -19,9 +19,32 @@ Salesperson.destroy_all
 # 1a. check out the schema file
 # 1b. check out the model file
 
+puts "There are #{Salesperson.all.count} salespeople"
+
 # 2. insert 1-2 rows in salespeople table.
 
+new_salesperson = Salesperson.new
+
+#puts new_salesperson.inspect
+
+new_salesperson["first_name"] = "Selly"
+new_salesperson["last_name"] = "McSellington"
+new_salesperson["email"] = "Selly.McSellington@apple.com"
+
+#puts new_salesperson.inspect
+
+salesperson2 = Salesperson.new
+    new_salesperson["first_name"] = "Lotta"
+    new_salesperson["last_name"] = "Sales"
+    new_salesperson["email"] = "Lotta.Sales@apple.com"
+
+    puts "There are #{Salesperson.all.count} salespeople"
+
 # 3. write code to display how many salespeople rows are in the database
+
+
+
+
 
 # ---------------------------------
 # Salespeople: 2

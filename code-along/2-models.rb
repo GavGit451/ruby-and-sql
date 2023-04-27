@@ -77,3 +77,7 @@ amazon.save # update row in table
 
 
 # 7. delete a row
+twitter = Company.find_by({"name" => "Twitter"})
+twitter.destroy
+
+puts "There are #{Company.all.count} companies"
